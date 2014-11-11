@@ -57,7 +57,25 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
-    .state('app.single', {
+    .state('app.quizzes', {
+      url: "/quizzes",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/quizzes.html",
+          controller: 'QuizzesCtrl'
+        }
+      }
+    })
+    .state('app.singleQuiz', {
+      url: "/quizzes/:quizId",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/quiz.html",
+          controller: 'QuizCtrl'
+        }
+      }
+    })
+    .state('app.singleTutorial', {
       url: "/tutorials/:tutorialId",
       views: {
         'menuContent' :{

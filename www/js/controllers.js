@@ -36,13 +36,57 @@ angular.module('starter.controllers', [])
 .controller('TutorialsCtrl', function($scope, Materials) {
   Materials.success(function (data) {
     $scope.tutorials = data.tutorials;
-  })
+  });
 })
 
 .controller('TutorialCtrl', function($scope, $stateParams, Materials) {
   
   Materials.success(function (data) {
     $scope.tutorial = data.tutorials[$stateParams.tutorialId-1];
-  })
+  });
   
+})
+
+
+.controller('QuizzesCtrl', function ($scope, Materials) {
+  Materials.success(function(data) {
+    $scope.quizzes = data.quizzes;
+  });
+})
+
+
+.controller('QuizCtrl', function($scope, $stateParams, Materials) {
+
+  $scope.results = [];
+  Materials.success(function(data) {
+    var quiz = data.quizzes[$stateParams.quizId-1];
+    $scope.problems = quiz.problems;
+    createResult();
+  });
+
+  var createResult = function() {
+    for (var i=0; i<$scope.problems.length; i++) {
+      
+      $scope.results.push({
+        _id: $scope.problems[i]._id,
+        answer: $scope.problems[i].answer,
+        userChoice: null,
+        result: null
+      });
+    }
+  };
+
+
+  $checkUserChoice = function(problemId, userChoice) {
+    var problem = $scope.results[problemId-1];
+    problem.userChoice = userChoice;
+
+    if (userChoice === problem.answer) {
+      problem.result = 'Correct'; 
+    }
+    else {
+      problem.result = 'Incorrect';
+    }
+  };
+
 });

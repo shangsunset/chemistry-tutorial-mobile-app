@@ -2,20 +2,28 @@
     "quizzes": 
     [
             {
+                "id": 1,
                 "topic" : "topic 1",
                 "problems": [
                     {
-                        "question": "how are you",
-                        "choices": ["im fine", "not good"]
+                      "_id":      1,
+                      "question": "AngularJS is a declarative programming language.",
+                      "answer":   true
                     },
                     {
-                        "question": "who are you",
-                        "choices": ["im bob", "not telling"]
-
+                      "_id":      2,
+                      "question": "The acronym 'SPA' stands for Single-Page Application.",
+                      "answer":   true
+                    },
+                    {
+                      "_id":      3,
+                      "question": "AngularJS is written in C++.",
+                      "answer":   false
                     }
                 ]
             },
             {
+                "id": 2,
                 "topic" : "topic 2",
                 "problems": [
                     {
