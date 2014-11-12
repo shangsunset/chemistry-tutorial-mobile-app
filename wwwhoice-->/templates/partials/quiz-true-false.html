@@ -1,0 +1,23 @@
+<ion-list>
+  <ion-item ng-repeat="problem in $parent.getFilteredProblem(problemId)">
+  {{problem._id}}: {{problem.question}}
+    <br>
+    <div class="radio">
+      <input required
+            name="_id{{problem._id}}"
+            type="radio"
+            value="true"
+            ng-model="problem.userChoice"
+            ng-change="$parent.checkUserChoice(problem._id, true)"/>
+      <label for="_id{{problem._id}}">True</label>
+      <br/>
+      <input required
+            name="_id{{problem._id}}"
+            type="radio"
+            ng-value="false"
+            ng-model="problem.userChoice"
+            ng-change="$parent.checkUserChoice(problem._id, false)"/>
+      <label for="_id{{problem._id}}">False</label>
+    </div>
+  </ion-item>
+</ion-list>
