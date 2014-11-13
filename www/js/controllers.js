@@ -125,6 +125,21 @@ angular.module('starter.controllers', [])
     }
   };
 
+
+  $scope.checkUserChoice = function(problemId, userChoice) {
+    
+    console.log(userChoice);
+    console.log($scope.problemInfo[problemId-1].answer);
+    $scope.problemInfo[problemId-1].userChoice = userChoice;
+
+    if ($scope.problemInfo[problemId-1].answer === userChoice) {
+      $scope.problemInfo[problemId-1].result = true;
+    }
+    else {
+      $scope.problemInfo[problemId-1].result = false;
+    }
+  };
+
   $scope.getFilteredProblem = function(problemId) {
     return filter($scope.problems, {_id: problemId});
   };

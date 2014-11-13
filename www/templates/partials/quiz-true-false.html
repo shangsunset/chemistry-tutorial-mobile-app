@@ -8,7 +8,7 @@
             type="radio"
             value="true"
             ng-model="problem.userChoice"
-            ng-change="$parent.$parent.checkUserChoice(problem._id, true)"/>
+            ng-change="$parent.$parent.$parent.checkUserChoice(problem._id, true)"/>
       </label>
       <div class="item-content">True</div>
   </li>
@@ -20,10 +20,10 @@
             type="radio"
             value="false"
             ng-model="problem.userChoice"
-            ng-change="$parent.$parent.checkUserChoice(problem._id, true)"/>
+            ng-change="$parent.$parent.$parent.checkUserChoice(problem._id, false)"/>
       </label>
       <div class="item-content">False</div>
   </li>
-
+  <div ng-include src="'/templates/partials/quiz-choice-response.html'"></div>
   </div>
 </ul>

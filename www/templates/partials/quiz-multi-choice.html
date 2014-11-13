@@ -8,10 +8,10 @@
             type="radio"
             value="{{choice._id}}"
             ng-model="problem.userChoice"
-            ng-change="$parent.$parent.checkUserChoice(problem._id, choice._id)"/>
+            ng-change="$parent.$parent.$parent.checkUserChoice(problem._id, choice._id)"/>
       </label>
-      <div class="item-contnet" for="_id{{problem._id}}">{{choice.choice}}</div>
-    </div>
-  </li>
+      <div class="item-contnet">{{choice.choice}}</div>
+    </li>
   <div ng-include src="'/templates/partials/quiz-choice-response.html'"></div>
+  </div>
 </ul>
