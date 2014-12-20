@@ -1,6 +1,8 @@
 <ul class="list">
-  <div ng-repeat="problem in $parent.getFilteredProblem(problemId)">
-  {{problem._id}}: {{problem.question}}
+  <div class="single" ng-repeat="problem in $parent.getFilteredProblem(problemId)">
+  <div class="item item-divider">
+    <p>{{problem._id}}: {{problem.question}}</p>
+  </div>
   <li class="item item-checkbox">
       <label class="checkbox">
       <input required
@@ -24,6 +26,8 @@
       </label>
       <div class="item-content">False</div>
   </li>
+  <!--
   <div ng-include src="'/templates/partials/quiz-choice-response.html'"></div>
   </div>
+  -->
 </ul>

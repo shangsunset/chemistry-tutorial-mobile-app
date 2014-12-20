@@ -1,48 +1,21 @@
-<ion-view title={{quiz.topic}}>
-  <ion-content class="has-header">
-    <h1>Quiz</h1>
+<ion-view title="Quiz">
+  <ion-nav-buttons side="left">
+  </ion-nav-buttons>
 
-    <ion-list>
-      <ion-item ng-repeat="problem in problems">
-      {{problem._id}}: {{problem.question}}
-        <br>
-        <div class="radio">
-          <input required
-                name="_id{{problem._id}}"
-                type="radio"
-                value="true"
-                ng-model="problem.userChoice"
-                ng-change="$parent.checkUserChoice(problem._id, true)"/>
-          <label for="_id{{problem._id}}">True</label>
-          <br/>
-          <input required
-                name="_id{{problem._id}}"
-                type="radio"
-                ng-value="false"
-                ng-model="problem.userChoice"
-                ng-change="$parent.checkUserChoice(problem._id, false)"/>
-          <label for="_id{{problem._id}}">False</label>
-        </div>
-      </ion-item>
-    </ion-list>
-
-
-    <!-- result section -->
-    <div ng-init="showResult=false">
-      <button class="btn btn-primary btn-sm"
-        ng-click="showResult=isQuizCompleted()">Show Result
+  <ion-nav-buttons side="right">
+      <button class="button button-clear button-positive" ng-click="showMeResult()">
+          Finish
       </button>
-    </div>
+  </ion-nav-buttons>
 
-    <div ng-show="showResult">
-      <strong>Result</strong>
-      <div ng-repeat="info in problemInfo">
-        <span ng-class="info.result=='Correct'? 'correct':'incorrect'">
-          {{info._id}}.{{info.result}}
-        </span>
-
-      </div>
-    </div>
+  <ion-content class="has-header">
+    <form name="quiz">
+      <!--true-false-->
+      <quiz-truefalse problem-id="1"></quiz-truefalse>
+      <quiz-truefalse problem-id="2"></quiz-truefalse>
+      <!--multi-choice-->
+      <quiz-multichoice problem-id="3"></quiz-multichoice>
+    </form>
 
 
   </ion-content>

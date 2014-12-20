@@ -5,6 +5,7 @@ angular.module('starter.services', [])
   return  $http.get('../data/quizzes.json');
 })
 
-.factory('tutorialFactory', function($http) {
+.factory('tutorialFactory', function($http, $ionicLoading) {
   return $http.get('../data/tutorials.json');
+
 });

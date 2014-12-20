@@ -1,12 +1,20 @@
 [
     {
         "id": 1,
-        "topic": "binary",
-        "instruction": "This is the instruction"
+        "topic": "Limit",
+        "instruction": "In mathematics, a limit is the value that a function or sequence \"approaches\" as the input or index approaches some value.[1] Limits are essential to calculus (andmathematical analysis in general) and are used to define continuity, derivatives, and integrals.",
+        "video": "//www.youtube.com/embed/riXcZT2ICjA?list=PLE88E3C9C7791BD2D"
     },
     {
         "id": 2,
-        "topic": "hex",
-        "instruction": "This is another tutorial"
+        "topic": "Sequences and Series",
+        "instruction": "A \"sequence\" (or \"progression\", in British English) is an ordered list of numbers; the numbers in this ordered list are called \"elements\" or \"terms\". A \"series\" is the value you get when you add up all the terms of a sequence; this value is called the \"sum\". For instance, \"1, 2, 3, 4\" is a sequence, with terms \"1\", \"2\", \"3\", and \"4\"; the corresponding series is the sum \"1 + 2 + 3 + 4\", and the value of the series is 10.\r\nA sequence may be named or referred to as \"A\" or \"An\". The terms of a sequence are usually named something like \"ai\" or \"an\", with the subscripted letter \"i\" or \"n\" being the \"index\" or counter. So the second term of a sequnce might be named \"a2\" (pronounced \"ay-sub-two\"), and \"a12\" would designate the twelfth term.",
+        "video" : "//www.youtube.com/embed/VgVJrSJxkDk?list=PLE88E3C9C7791BD2D"
+    },
+    {
+       "id": 3,
+       "topic": "Permutation and Combination",
+       "instruction": "Permutations and Combinations in mathematics both refer to different ways of arranging a given set of variables. Permutations are not strict when it comes to the order of things while Combinations are. Combinations on the other hand are considered different, all the above are considered the same since they have the exact same letters only arranged different. In other words, in combination, you can't just rearrange the same letters and then claim to have a completely different combination. Combinations are done differently: Given abc, we can make a number of combinations by taking groups of letters at once.",
+       "video": "//www.youtube.com/embed/bCxMhncR7PU?list=PLE88E3C9C7791BD2D&amp;controls=0"
     }
   ]

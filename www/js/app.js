@@ -7,7 +7,7 @@
 angular.module('starter', ['ionic', 'starter.controllers', 'starter.services',
         'starter.directives'])
 
-.run(function($ionicPlatform) {
+.run(function($ionicPlatform, $rootScope, $ionicLoading) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -19,16 +19,38 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services',
       StatusBar.styleDefault();
     }
   });
+
+  // $rootScope.$on('loading:show', function() {
+  //   $ionicLoading.show({template: '<i class="icon ion-loading-c"></i>Loading'});
+  // });
+  //
+  // $rootScope.$on('loading:hide', function() {
+  //   $ionicLoading.hide();
+  // });
 })
 
-.config(function($stateProvider, $urlRouterProvider) {
-  $stateProvider
+.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 
+  // $httpProvider.interceptors.push(function($rootScope) {
+  //   return {
+  //     request: function(config) {
+  //       $rootScope.$broadcast('loading:show');
+  //       return config;
+  //     },
+  //     response: function(response) {
+  //       $rootScope.$broadcast('loading:hide');
+  //       return response;
+  //     }
+  //   };
+  // });
+
+
+  $stateProvider
     .state('app', {
       url: "/app",
       abstract: true,
       templateUrl: "templates/menu.html",
-      controller: 'AppCtrl'
+      controller: 'MainCtrl'
     })
 
     .state('app.search', {
@@ -71,8 +93,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services',
       url: "/quizzes/:quizId",
       views: {
         'menuContent' :{
-          templateUrl: "templates/advanced-quiz.html",
-          controller: 'AdvancedQuizCtrl'
+          templateUrl: "templates/quiz.html",
+          controller: 'QuizCtrl'
         }
       }
     })

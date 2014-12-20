@@ -1,6 +1,35 @@
 <ion-view title="Tutorial">
   <ion-content class="has-header">
-    <h1>Instruction</h1>
-    <p>{{tutorial.instruction}}</p>
+  <div class="list card">
+    <div class="item">
+      <h2>{{tutorial.topic}}</h2>
+        <p>this is a sub-topic</p>
+      </div>
+
+      <div class="item item-body">
+        <p>{{tutorial.instruction}}</p>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="video-container">
+            <iframe ng-src="{{trustSrc(tutorial.video)}}" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="item tabs tabs-secondary tabs-icon-left">
+        <a class="tab-item" ng-href="#/app/quizzes/{{tutorial.id}}">
+          <i class="icon ion-thumbsup"></i>
+          Quiz
+        </a>
+        <a class="tab-item" href="#">
+          <i class="icon ion-share"></i>
+          Share
+        </a>
+      </div>
+
+    </div>
+  </div>
   </ion-content>
 </ion-view>
