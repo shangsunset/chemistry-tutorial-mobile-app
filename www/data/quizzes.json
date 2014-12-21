@@ -1,52 +1,106 @@
 [
       {
           "id": 1,
-          "topic" : "Limit",
+          "topic" : "Elements and Atoms",
           "problems": [
-              {
-                "_id":      1,
-                "question": "AngularJS is a declarative programming language.",
-                "answer":   true
-              },
-              {
-                "_id":      2,
-                "question": "The acronym 'SPA' stands for Single-Page Application.",
-                "answer":   true
-              }
-          ]
-      },
-      {
-          "id": 2,
-          "topic" : "Sequences and Series",
-          "problems": [
-              {
+                {
                   "_id":      1,
-                  "question": "AngularJS is written completely in JavaScript.",
-                  "type":     "True-false",
-                  "answer":   true
-                },
-                {
-                  "_id":      2,
-                  "question": "is it working?",
-                  "type":     "True-false",
-                  "answer":   true
-                },
-                {
-                  "_id":      3,
-                  "question": "What does the acronym 'MVC' stand for?",
+                  "question": "A beryllium atom has 4 protons, 5 neutrons, and 4 electrons. What is the mass number of this atom?",
                   "type":     "Multiple choice",
                   "choices":  [
                     {
                       "_id":    1,
-                      "choice": "Method, Variable, Constant"
+                      "choice": "4"
                     },
                     {
                       "_id":    2,
-                      "choice": "Module, View, Constraint"
+                      "choice": "5"
                     },
                     {
                       "_id":    3,
-                      "choice": "Model, View, Controller"
+                      "choice": "8"
+                    },
+                    {
+                      "_id":    4,
+                      "choice": "9"
+                    }
+                  ],
+                  "answer":   4
+                },
+
+                {
+                  "_id":      2,
+                  "question": "The lowest principal quantum number for an electron is",
+                  "type":     "Multiple choice",
+                  "choices":  [
+                    {
+                      "_id":    1,
+                      "choice": "0"
+                    },
+                    {
+                      "_id":    2,
+                      "choice": "1"
+                    },
+                    {
+                      "_id":    3,
+                      "choice": "2"
+                    },
+                    {
+                      "_id":    4,
+                      "choice": "3"
+                    }
+                  ],
+                  "answer":   1
+                },
+
+                {
+                  "_id":      3,
+                  "question": "An electron dot symbol for an element shows that element's symbol and an arrangement of dots that indicates the:",
+                  "type":     "Multiple choice",
+                  "choices":  [
+                    {
+                      "_id":    1,
+                      "choice": "atomic number"
+                    },
+                    {
+                      "_id":    2,
+                      "choice": "atomic mass"
+                    },
+                    {
+                      "_id":    3,
+                      "choice": "total number of electrons"
+                    },
+                    {
+                      "_id":    4,
+                      "choice": "number of electrons in the outer energy level"
+                    }
+                  ],
+                  "answer":   4
+                }
+
+
+          ]
+      },
+      {
+          "id": 2,
+          "topic" : "Electron Configurations",
+          "problems": [
+                {
+                  "_id":      1,
+                  "question": "The \"up\" and \"down\" arrows in electron orbital notation depict",
+                  "type":     "Multiple choice",
+                  "choices":  [
+                    {
+                      "_id":    1,
+                      "choice": "protons & electrons"
+                    },
+                    {
+                      "_id":    2,
+                      "choice": "protons & neutrons"
+                    },
+                    {
+                      "_id":    3,
+                      "choice": "electrons with opposite spins"
                     },
                     {
                       "_id":    4,
@@ -54,9 +108,143 @@
                     }
                   ],
                   "answer":   3
+                },
+                {
+                  "_id":      2,
+                  "question": "What neutral atom is represented by the following configuration: 1s2,2s2,2p6,3s2,3p6,4s2,3d10?",
+                  "type":     "Multiple choice",
+                  "choices":  [
+                    {
+                      "_id":    1,
+                      "choice": "Silicon"
+                    },
+                    {
+                      "_id":    2,
+                      "choice": "Selenium"
+                    },
+                    {
+                      "_id":    3,
+                      "choice": "Silver"
+                    },
+                    {
+                      "_id":    4,
+                      "choice": "Sulfur"
+                    }
+                  ],
+                  "answer":   3
+                },
+
+                {
+                  "_id":      3,
+                  "question": "Which of the following noble gas configurations is correct for potassium?",
+                  "type":     "Multiple choice",
+                  "choices":  [
+                    {
+                      "_id":    1,
+                      "choice": "(Kr)4s1"
+                    },
+                    {
+                      "_id":    2,
+                      "choice": "(Kr)3s1"
+                    },
+                    {
+                      "_id":    3,
+                      "choice": "(Ar)4s1"
+                    },
+                    {
+                      "_id":    4,
+                      "choice": "(Ar)3s1"
+                    }
+                  ],
+                  "answer":   3
                 }
 
+
+
           ]
+      },
+      {
+           "id": 1,
+          "topic" : "Valence Electrons",
+          "problems": [
+                {
+                  "_id":      1,
+                  "question": "How many valence electrons does an element with electron configuration, 1s2 2s 2 2p6 3s2 3p6 4s 2 3d10 4p3 have?",
+                  "type":     "Multiple choice",
+                  "choices":  [
+                    {
+                      "_id":    1,
+                      "choice": "5"
+                    },
+                    {
+                      "_id":    2,
+                      "choice": "2"
+                    },
+                    {
+                      "_id":    3,
+                      "choice": "10"
+                    },
+                    {
+                      "_id":    4,
+                      "choice": "3"
+                    }
+                  ],
+                  "answer":   1
+                },
+
+                {
+                  "_id":      2,
+                  "question": "What are the two main types of chemical bonds?",
+                  "type":     "Multiple choice",
+                  "choices":  [
+                    {
+                      "_id":    1,
+                      "choice": "ionic bonding and covalent bonding"
+                    },
+                    {
+                      "_id":    2,
+                      "choice": "simple bonding and ionic bonding"
+                    },
+                    {
+                      "_id":    3,
+                      "choice": "nonpolar covalent bonding and covalent bonding"
+                    },
+                    {
+                      "_id":    4,
+                      "choice": "polar bonding and covalent bonding"
+                    }
+                  ],
+                  "answer":   1
+                },
+
+                {
+                  "_id":      3,
+                  "question": "A covalent bond is formed when electrons are:",
+                  "type":     "Multiple choice",
+                  "choices":  [
+                    {
+                      "_id":    1,
+                      "choice": "shared"
+                    },
+                    {
+                      "_id":    2,
+                      "choice": "split"
+                    },
+                    {
+                      "_id":    3,
+                      "choice": "transferred"
+                    },
+                    {
+                      "_id":    4,
+                      "choice": "destroyed"
+                    }
+                  ],
+                  "answer":   3
+                }
+
+
+          ]
+         
       }
 ]
 

@@ -1,20 +1,20 @@
 [
     {
         "id": 1,
-        "topic": "Limit",
-        "instruction": "In mathematics, a limit is the value that a function or sequence \"approaches\" as the input or index approaches some value.[1] Limits are essential to calculus (andmathematical analysis in general) and are used to define continuity, derivatives, and integrals.",
-        "video": "//www.youtube.com/embed/riXcZT2ICjA?list=PLE88E3C9C7791BD2D"
+        "topic": "Elements and Atoms",
+        "instruction": "To understand the nature of the atom, one must return to the beginning and analyze observations which lead to our modern day schema. 19th century scientists began their odyssey into understanding the atom by observing electricity. The notion of matter and electric charge were understood but the actual components of the current were an anathema. First among many experiments are the Cathode Ray Tube Experiments. These cathode rays originate at a negative cathode and proceed towards a positive cathode. However, once the scientists introduced a magnet to the setting, they noticed these rays did not travel in straight lines. Rather, the rays were attracted towards the positive magnet, making them appear bent. Scientists understood that opposites attract and the current, which bent toward the positive end, must be composed of negatively charged \"things\" (we later call them electrons).\r\n",
+        "video": "//www.youtube.com/embed/1xSQlwWGT8M?list=PL166048DD75B05C0D&amp;controls=0"
     },
     {
         "id": 2,
-        "topic": "Sequences and Series",
-        "instruction": "A \"sequence\" (or \"progression\", in British English) is an ordered list of numbers; the numbers in this ordered list are called \"elements\" or \"terms\". A \"series\" is the value you get when you add up all the terms of a sequence; this value is called the \"sum\". For instance, \"1, 2, 3, 4\" is a sequence, with terms \"1\", \"2\", \"3\", and \"4\"; the corresponding series is the sum \"1 + 2 + 3 + 4\", and the value of the series is 10.\r\nA sequence may be named or referred to as \"A\" or \"An\". The terms of a sequence are usually named something like \"ai\" or \"an\", with the subscripted letter \"i\" or \"n\" being the \"index\" or counter. So the second term of a sequnce might be named \"a2\" (pronounced \"ay-sub-two\"), and \"a12\" would designate the twelfth term.",
-        "video" : "//www.youtube.com/embed/VgVJrSJxkDk?list=PLE88E3C9C7791BD2D"
+        "topic": "Electron Configurations",
+        "instruction": "Electrons play a crucial role in chemical reactions and how compounds interact with each other. Remember, electrons are the negative particles in an atom that \"orbit\" the nucleus. Although we say they orbit the nucleus, we now know that they are actually in a random state of motion surrounding the nucleus rather than making circles around it, which is what an orbit implies. The best analogy to describe electron motion within an atom is how bees buzz around a beehive. They do no fly in complete circles around it, but they do hover and move around it in a seemingly random motion.\nElectrons increase in elements as protons do, which is from left to right and from top to bottom on the periodic table. Therefore, the element with the fewest electrons would be in the top left-hand corner of the table and the element with the most electrons would be in the bottom right hand corner. The elements are arranged so that the increase from element to element is one electron. Therefore, in the first row, we see hydrogen and helium. This is because hydrogen has one electron and helium has two electrons, so we place them in ascending order.",
+        "video" : "//www.youtube.com/embed/RJlEH5Jz80w?list=PL166048DD75B05C0D&amp;controls=0"
     },
     {
        "id": 3,
-       "topic": "Permutation and Combination",
-       "instruction": "Permutations and Combinations in mathematics both refer to different ways of arranging a given set of variables. Permutations are not strict when it comes to the order of things while Combinations are. Combinations on the other hand are considered different, all the above are considered the same since they have the exact same letters only arranged different. In other words, in combination, you can't just rearrange the same letters and then claim to have a completely different combination. Combinations are done differently: Given abc, we can make a number of combinations by taking groups of letters at once.",
-       "video": "//www.youtube.com/embed/bCxMhncR7PU?list=PLE88E3C9C7791BD2D&amp;controls=0"
+       "topic": "Valence Electron",
+       "instruction": "What are valence electrons and why are they important? What sets them apart from other electrons? Let us imagine a nice restaurant. We sit down, and our server hands us our menus and they take our order. They bring us our food and then give us the bill. Pretty much all our interactions in restaurants are with our servers.",
+       "video": "//www.youtube.com/embed/1TZA171yxY4?list=PL166048DD75B05C0D&amp;controls=0"
     }
   ]
